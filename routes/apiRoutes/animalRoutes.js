@@ -28,7 +28,7 @@ router.post('/animals', (req, res) => {
         res.status(400).send('The animal is not properly formatted.')
     } else {
         // add animal to json file and aimals array
-        const animal = createNewAnimal(req.body, animals)
+        const animal = createNewAnimal(req.body, animals);
         res.json(animal);
     }
 });
